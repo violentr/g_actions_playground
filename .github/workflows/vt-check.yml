@@ -37,10 +37,10 @@ jobs:
           # The GitHub token used to create an authenticated client for GitHub API
           vt_api_key: ${{secrets.VT_API_KEY}}
             # Newline-delimited list of path globs for asset files to upload for analysis
-          files: true # If enabled, files will be uploaded to VirusTotal Monitor endpoint
+          files: "Readme.md" # If enabled, files will be uploaded to VirusTotal Monitor endpoint
           vt_monitor: false # optional, default is false
             # A path relative to current monitor user root folder to upload files
-          monitor_path: . # optional, default is /
+          monitor_path: / # optional, default is /
             # If enabled, analysis link(s) will be appended to the release body
           update_release_body: false # default is false
             # The GitHub token used to create an authenticated client for GitHub API
